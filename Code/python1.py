@@ -68,7 +68,12 @@ def one(input1, input2):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-	return []
+	if input.lower().count('bert') == 2:
+		bert1 = input.lower().index('bert')
+		bert2 = input.lower().index('bert', bert1+4)
+		return input[bert1+4:bert2]
+	else:
+		return ""
 
 
 
