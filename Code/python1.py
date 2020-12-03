@@ -68,9 +68,7 @@ def one(input1, input2):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-	if input.lower().count("bert") == 2:
-		word = input.lower().split("bert")
-
+	return []
 
 
 
@@ -264,7 +262,12 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
+    no_space = inputString.replace(" ","")
+    print(no_space)
+    if char in no_space:
+        return no_space.index(char) + 1
+    else:
+        return -1
 
 	# <QUESTION 10>
 
